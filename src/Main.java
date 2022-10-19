@@ -3,6 +3,8 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
@@ -15,5 +17,12 @@ public class Main {
 
         String body = response.body();
         System.out.println(body);
+
+        var p = new JsonParser();
+        List<Map<String,String>> listItens = p.parse(body);
+
+        for(Map<String,String> filme : listItens){
+            System.out.println(filme);
+        }
     }
 }
