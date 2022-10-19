@@ -22,7 +22,22 @@ public class Main {
         List<Map<String,String>> listItens = p.parse(body);
 
         for(Map<String,String> filme : listItens){
-            System.out.println(filme);
+            System.out.println(filme.get("title"));
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
