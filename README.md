@@ -1,2 +1,2 @@
-# java_consumindo_api
-Consumindo uma api qualquer usando a linguagem java
+# java_consumindo_api e WhatsApp/Telegram Stickers
+Consumindo uma api qualquer e criando Stickers para WhatsApp/Telegram usando a linguagem java.
